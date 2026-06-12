@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/components/mobile-cards.css">
     <link rel="stylesheet" href="./css/components/mobile-responsive.css">
+    <link rel="stylesheet" href="./css/components/enhanced-animations.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./js/translations.js"></script>
     <script src="./data/projects-translations.js"></script>
@@ -75,6 +76,15 @@
             </div>
         </nav>
         
+        <!-- Hub Link -->
+        <div class="text-center py-4">
+            <a href="https://hub.sstechnologies-cloud.com" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-800 rounded-full text-sm hover:bg-gray-700 transition-all">
+                <i class="fas fa-th mr-2"></i>
+                <span>Visite nosso Hub de Serviços</span>
+                <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+            </a>
+        </div>
+        
         <!-- Hero Section -->
         <section class="py-8 md:py-16 lg:py-24 flex flex-col md:flex-row-reverse items-center">
             <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
@@ -95,6 +105,30 @@
             </div>
         </section>
         
+        <!-- Impact Metrics Section -->
+        <section class="py-8 md:py-16">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center gradient-text px-4 md:px-0">IMPACTO DOS PROJETOS</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 px-4 md:px-0 mb-8">
+                <div class="bg-gray-800 rounded-2xl p-4 md:p-6 text-center neon-border metrics-card stagger-animation">
+                    <div class="text-2xl md:text-4xl font-bold gradient-text-animated mb-2">15+</div>
+                    <div class="text-gray-300 text-sm md:text-base">Projetos Entregues</div>
+                </div>
+                <div class="bg-gray-800 rounded-2xl p-4 md:p-6 text-center neon-border metrics-card stagger-animation">
+                    <div class="text-2xl md:text-4xl font-bold gradient-text-animated mb-2">99.9%</div>
+                    <div class="text-gray-300 text-sm md:text-base">Uptime Médio</div>
+                </div>
+                <div class="bg-gray-800 rounded-2xl p-4 md:p-6 text-center neon-border metrics-card stagger-animation">
+                    <div class="text-2xl md:text-4xl font-bold gradient-text-animated mb-2">2000+</div>
+                    <div class="text-gray-300 text-sm md:text-base">Usuários Ativos</div>
+                </div>
+                <div class="bg-gray-800 rounded-2xl p-4 md:p-6 text-center neon-border metrics-card stagger-animation">
+                    <div class="text-2xl md:text-4xl font-bold gradient-text-animated mb-2">85%</div>
+                    <div class="text-gray-300 text-sm md:text-base">Melhoria Performance</div>
+                </div>
+            </div>
+        </section>
+
         <!-- Online Projects Section -->
         <section id="online-projects" class="py-8 md:py-16">
             <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center gradient-text px-4 md:px-0" data-translate="projects.online.title">PROJETOS ONLINE</h2>
@@ -180,6 +214,91 @@
                         <a href="./project-details.html?project=aws-services" class="inline-block px-4 py-2 bg-gray-700 bg-opacity-50 rounded-full text-gray-300 hover:bg-opacity-70 transition-all text-center text-sm md:text-base min-h-[40px] flex items-center justify-center" data-translate="projects.details">Detalhes</a>
                     </div>
                 </div>
+                
+                <!-- Sistema de Crediário DM Móveis -->
+                <div class="bg-gray-800 rounded-2xl p-4 md:p-6 card-hover neon-border">
+                    <div class="h-40 md:h-48 overflow-hidden rounded-xl mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sistema de Crediário" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-2 md:bottom-4 left-2 md:left-4">
+                            <h3 class="text-lg md:text-xl font-bold">Sistema de Crediário</h3>
+                            <p class="text-xs md:text-sm text-blue-300">HTML5, CSS3, JavaScript</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4 text-sm md:text-base">Sistema web para controle de vendas a crédito, gestão de clientes e parcelas com busca inteligente.</p>
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <a href="https://sergio-sena.github.io/crediario-system/previa/" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-blue-500 bg-opacity-20 rounded-full text-blue-300 hover:bg-opacity-30 transition-all text-center text-sm md:text-base min-h-[40px] flex items-center justify-center" data-translate="projects.view">Ver Projeto</a>
+                        <a href="./project-details.html?project=sistema-crediario" class="inline-block px-4 py-2 bg-gray-700 bg-opacity-50 rounded-full text-gray-300 hover:bg-opacity-70 transition-all text-center text-sm md:text-base min-h-[40px] flex items-center justify-center" data-translate="projects.details">Detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Mídiaflow -->
+                <div class="bg-gray-800 rounded-2xl p-4 md:p-6 card-hover neon-border">
+                    <div class="h-40 md:h-48 overflow-hidden rounded-xl mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mídiaflow" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-2 md:bottom-4 left-2 md:left-4">
+                            <h3 class="text-lg md:text-xl font-bold">Mídiaflow</h3>
+                            <p class="text-xs md:text-sm text-purple-300">Next.js, AWS Lambda, MediaConvert</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4 text-sm md:text-base">Plataforma SaaS para hospedagem de vídeos profissionais. Alternativa ao Vimeo com 50-80% menos custo.</p>
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <a href="https://midiaflow.sstechnologies-cloud.com" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-purple-500 bg-opacity-20 rounded-full text-purple-300 hover:bg-opacity-30 transition-all text-center text-sm md:text-base min-h-[40px] flex items-center justify-center" data-translate="projects.view">Ver Site</a>
+                        <a href="./project-details.html?project=midiaflow" class="inline-block px-4 py-2 bg-gray-700 bg-opacity-50 rounded-full text-gray-300 hover:bg-opacity-70 transition-all text-center text-sm md:text-base min-h-[40px] flex items-center justify-center" data-translate="projects.details">Detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Yorkshire Canil Brazil -->
+                <div class="bg-gray-800 rounded-2xl p-4 md:p-6 card-hover neon-border">
+                    <div class="h-40 md:h-48 overflow-hidden rounded-xl mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1583337130417-13104dec14a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Yorkshire Canil Brazil" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-2 md:bottom-4 left-2 md:left-4">
+                            <h3 class="text-lg md:text-xl font-bold">Yorkshire Canil Brazil</h3>
+                            <p class="text-xs md:text-sm text-emerald-300">HTML5, CSS3, JavaScript</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4 text-sm md:text-base">Landing page para canil campeão nacional e sul-americano de Yorkshire Terrier. Performance 100 no Lighthouse.</p>
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <a href="https://sergio-sena.github.io/Yorkshire-canil-brazil/" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-emerald-500 bg-opacity-20 rounded-full text-emerald-300 hover:bg-opacity-30 transition-all text-center text-sm md:text-base min-h-[40px] flex items-center justify-center" data-translate="projects.view">Ver Site</a>
+                        <a href="./project-details.html?project=yorkshire-canil" class="inline-block px-4 py-2 bg-gray-700 bg-opacity-50 rounded-full text-gray-300 hover:bg-opacity-70 transition-all text-center text-sm md:text-base min-h-[40px] flex items-center justify-center" data-translate="projects.details">Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Finanças Pessoais -->
+                <div class="bg-gray-800 rounded-2xl p-4 md:p-6 card-hover neon-border">
+                    <div class="h-40 md:h-48 overflow-hidden rounded-xl mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Finanças Pessoais" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-2 md:bottom-4 left-2 md:left-4">
+                            <h3 class="text-lg md:text-xl font-bold">Finanças Pessoais</h3>
+                            <p class="text-xs md:text-sm text-emerald-300">HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4 text-sm md:text-base">Sistema de controle financeiro pessoal com gráficos e relatórios de gastos.</p>
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <a href="https://smartfinance.sstechnologies-cloud.com" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-emerald-500 bg-opacity-20 rounded-full text-emerald-300 hover:bg-opacity-30 transition-all text-center text-sm md:text-base min-h-[40px] flex items-center justify-center" data-translate="projects.view">Ver Site</a>
+                        <a href="./project-details.html?project=financas-pessoais" class="inline-block px-4 py-2 bg-gray-700 bg-opacity-50 rounded-full text-gray-300 hover:bg-opacity-70 transition-all text-center text-sm md:text-base min-h-[40px] flex items-center justify-center" data-translate="projects.details">Detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- SSphere - Rede Social -->
+                <div class="bg-gray-800 rounded-2xl p-4 md:p-6 card-hover neon-border">
+                    <div class="h-40 md:h-48 overflow-hidden rounded-xl mb-4 relative">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="SSphere" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-2 md:bottom-4 left-2 md:left-4">
+                            <h3 class="text-lg md:text-xl font-bold">SSphere</h3>
+                            <p class="text-xs md:text-sm text-pink-300">React, Next.js, MongoDB</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-4 text-sm md:text-base">Rede social moderna com feed, likes, comentários e sistema de seguir usuários.</p>
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <a href="https://ssphere.sstechnologies-cloud.com" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-pink-500 bg-opacity-20 rounded-full text-pink-300 hover:bg-opacity-30 transition-all text-center text-sm md:text-base min-h-[40px] flex items-center justify-center" data-translate="projects.view">Ver Site</a>
+                        <a href="./project-details.html?project=ssphere" class="inline-block px-4 py-2 bg-gray-700 bg-opacity-50 rounded-full text-gray-300 hover:bg-opacity-70 transition-all text-center text-sm md:text-base min-h-[40px] flex items-center justify-center" data-translate="projects.details">Detalhes</a>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -190,52 +309,22 @@
             <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center gradient-text px-4 md:px-0" data-translate="projects.development.title">PROJETOS EM DESENVOLVIMENTO</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 md:px-0">
-                <!-- Project 3 - Devaria -->
-                <div class="bg-gray-800 rounded-2xl p-6 card-hover neon-border">
-                    <div class="h-48 overflow-hidden rounded-xl mb-4 relative">
-                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Project 3" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-                        <div class="absolute bottom-4 left-4">
-                            <h3 class="text-xl font-bold">Devaria</h3>
-                            <p class="text-sm text-pink-300">AWS Lambda, Node, NextJS</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-300 mb-4">Releitura de rede social utilizando tecnologias modernas e arquitetura serverless.</p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-pink-500 bg-opacity-20 rounded-full text-pink-300 hover:bg-opacity-30 transition-all">Em Desenvolvimento</a>
-                    <a href="./project-details.html?project=devaria" class="inline-block px-4 py-2 bg-gray-700 bg-opacity-50 rounded-full text-gray-300 hover:bg-opacity-70 transition-all ml-2">Detalhes</a>
-                </div>
-                
-                <!-- Project Card for AutoDeploy -->
-                <div class="bg-gray-800 rounded-2xl p-6 card-hover neon-border">
-                    <div class="h-48 overflow-hidden rounded-xl mb-4 relative">
-                        <img src="https://images.unsplash.com/photo-1607743386760-88ac62b89b8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="AutoDeploy Project" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-                        <div class="absolute bottom-4 left-4">
-                            <h3 class="text-xl font-bold">AutoDeploy</h3>
-                            <p class="text-sm text-green-300">AWS, GitHub Actions, CI/CD</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-300 mb-4">Sistema de implantação automática para aplicações web com integração contínua e entrega contínua.</p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-green-500 bg-opacity-20 rounded-full text-green-300 hover:bg-opacity-30 transition-all">Em Desenvolvimento</a>
-                    <a href="./project-details.html?project=autodeploy" class="inline-block px-4 py-2 bg-gray-700 bg-opacity-50 rounded-full text-gray-300 hover:bg-opacity-70 transition-all ml-2">Detalhes</a>
-                </div>
-                
 
-                
-                <!-- Automação de Sistemas -->
+                <!-- DocuMind AI -->
                 <div class="bg-gray-800 rounded-2xl p-6 card-hover neon-border">
                     <div class="h-48 overflow-hidden rounded-xl mb-4 relative">
-                        <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Automação de Sistemas" class="w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="DocuMind AI" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
                         <div class="absolute bottom-4 left-4">
-                            <h3 class="text-xl font-bold">Automação de Sistemas</h3>
-                            <p class="text-sm text-blue-300">Python, PySimpleGUI, Pandas</p>
+                            <h3 class="text-xl font-bold">DocuMind AI</h3>
+                            <p class="text-sm text-purple-300">Python, LangChain, RAG, AWS Lambda</p>
                         </div>
                     </div>
-                    <p class="text-gray-300 mb-4">Aplicação desktop para automatizar tarefas repetitivas de processamento de dados e geração de relatórios.</p>
-                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-blue-500 bg-opacity-20 rounded-full text-blue-300 hover:bg-opacity-30 transition-all">Ver Demo</a>
-                    <a href="./project-details.html?project=automacao-sistemas" class="inline-block px-4 py-2 bg-gray-700 bg-opacity-50 rounded-full text-gray-300 hover:bg-opacity-70 transition-all ml-2">Detalhes</a>
+                    <p class="text-gray-300 mb-4">Sistema de IA conversacional que processa documentos PDF (normas técnicas, regulamentações, manuais) e permite aos usuários fazer perguntas em linguagem natural. Utiliza RAG (Retrieval-Augmented Generation) para buscar informações específicas nos documentos e fornecer respostas precisas com citação de fontes.</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-purple-500 bg-opacity-20 rounded-full text-purple-300 hover:bg-opacity-30 transition-all">Em Desenvolvimento</a>
+                    <a href="./project-details.html?project=documind-ai" class="inline-block px-4 py-2 bg-gray-700 bg-opacity-50 rounded-full text-gray-300 hover:bg-opacity-70 transition-all ml-2">Detalhes</a>
                 </div>
+
             </div>
         </section>
         
@@ -301,26 +390,63 @@
                         </div>
                     </div>
                     
-                    <div class="mt-4">
+                    <div class="mt-4 flex flex-col sm:flex-row gap-3">
                         <a href="./certificates.html" class="inline-block px-4 md:px-6 py-3 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full font-bold hover:opacity-90 transition-all text-sm md:text-base min-h-[44px] flex items-center justify-center">
-                            <i class="fas fa-certificate mr-2"></i> <span data-translate="about.certificates.button">Ver Todos os Certificados</span>
+                            <i class="fas fa-certificate mr-2"></i> <span data-translate="about.certificates.button">Ver Certificados</span>
+                        </a>
+                        <a href="https://github.com/Sergio-Sena" target="_blank" class="inline-block px-4 md:px-6 py-3 border border-cyan-400 rounded-full font-bold hover:bg-cyan-400 hover:bg-opacity-10 transition-all text-sm md:text-base min-h-[44px] flex items-center justify-center">
+                            <i class="fab fa-github mr-2"></i> <span>GitHub Portfolio</span>
                         </a>
                     </div>
                     
-                    <h4 class="text-lg md:text-xl font-bold mb-3 gradient-text" data-translate="about.skills">Habilidades</h4>
-                    <div class="flex flex-wrap gap-1.5 md:gap-2 mb-4 md:mb-6">
-                        <span class="px-2 md:px-3 py-1 bg-gray-800 rounded-full text-xs md:text-sm">AWS</span>
-                        <span class="px-2 md:px-3 py-1 bg-gray-800 rounded-full text-xs md:text-sm">Cloud Computing</span>
-                        <span class="px-2 md:px-3 py-1 bg-gray-800 rounded-full text-xs md:text-sm">Linux</span>
-                        <span class="px-2 md:px-3 py-1 bg-gray-800 rounded-full text-xs md:text-sm">Windows</span>
-                        <span class="px-2 md:px-3 py-1 bg-gray-800 rounded-full text-xs md:text-sm">TypeScript</span>
-                        <span class="px-2 md:px-3 py-1 bg-gray-800 rounded-full text-xs md:text-sm">Python</span>
-                        <span class="px-2 md:px-3 py-1 bg-gray-800 rounded-full text-xs md:text-sm">HTML</span>
-                        <span class="px-2 md:px-3 py-1 bg-gray-800 rounded-full text-xs md:text-sm">CSS</span>
-                        <span class="px-2 md:px-3 py-1 bg-gray-800 rounded-full text-xs md:text-sm">JavaScript</span>
-                        <span class="px-2 md:px-3 py-1 bg-gray-800 rounded-full text-xs md:text-sm">SQL</span>
-                        <span class="px-2 md:px-3 py-1 bg-gray-800 rounded-full text-xs md:text-sm">NoSQL</span>
-                        <span class="px-2 md:px-3 py-1 bg-gray-800 rounded-full text-xs md:text-sm">Metodologias Ágeis</span>
+                    <h4 class="text-lg md:text-xl font-bold mb-3 gradient-text" data-translate="about.skills">Stack Tecnológico</h4>
+                    
+                    <!-- Cloud & Infrastructure -->
+                    <div class="mb-4">
+                        <h5 class="font-bold text-cyan-400 mb-2 text-sm">☁️ Cloud & Infrastructure</h5>
+                        <div class="flex flex-wrap gap-1.5 md:gap-2 mb-3">
+                            <span class="px-2 md:px-3 py-1 bg-cyan-900 bg-opacity-30 border border-cyan-500 rounded-full text-xs md:text-sm text-cyan-300">AWS</span>
+                            <span class="px-2 md:px-3 py-1 bg-cyan-900 bg-opacity-30 border border-cyan-500 rounded-full text-xs md:text-sm text-cyan-300">Lambda</span>
+                            <span class="px-2 md:px-3 py-1 bg-cyan-900 bg-opacity-30 border border-cyan-500 rounded-full text-xs md:text-sm text-cyan-300">S3</span>
+                            <span class="px-2 md:px-3 py-1 bg-cyan-900 bg-opacity-30 border border-cyan-500 rounded-full text-xs md:text-sm text-cyan-300">CloudFront</span>
+                            <span class="px-2 md:px-3 py-1 bg-cyan-900 bg-opacity-30 border border-cyan-500 rounded-full text-xs md:text-sm text-cyan-300">DynamoDB</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Frontend -->
+                    <div class="mb-4">
+                        <h5 class="font-bold text-purple-400 mb-2 text-sm">🎨 Frontend</h5>
+                        <div class="flex flex-wrap gap-1.5 md:gap-2 mb-3">
+                            <span class="px-2 md:px-3 py-1 bg-purple-900 bg-opacity-30 border border-purple-500 rounded-full text-xs md:text-sm text-purple-300">React</span>
+                            <span class="px-2 md:px-3 py-1 bg-purple-900 bg-opacity-30 border border-purple-500 rounded-full text-xs md:text-sm text-purple-300">Next.js</span>
+                            <span class="px-2 md:px-3 py-1 bg-purple-900 bg-opacity-30 border border-purple-500 rounded-full text-xs md:text-sm text-purple-300">TypeScript</span>
+                            <span class="px-2 md:px-3 py-1 bg-purple-900 bg-opacity-30 border border-purple-500 rounded-full text-xs md:text-sm text-purple-300">TailwindCSS</span>
+                            <span class="px-2 md:px-3 py-1 bg-purple-900 bg-opacity-30 border border-purple-500 rounded-full text-xs md:text-sm text-purple-300">JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend -->
+                    <div class="mb-4">
+                        <h5 class="font-bold text-green-400 mb-2 text-sm">⚙️ Backend</h5>
+                        <div class="flex flex-wrap gap-1.5 md:gap-2 mb-3">
+                            <span class="px-2 md:px-3 py-1 bg-green-900 bg-opacity-30 border border-green-500 rounded-full text-xs md:text-sm text-green-300">Node.js</span>
+                            <span class="px-2 md:px-3 py-1 bg-green-900 bg-opacity-30 border border-green-500 rounded-full text-xs md:text-sm text-green-300">Python</span>
+                            <span class="px-2 md:px-3 py-1 bg-green-900 bg-opacity-30 border border-green-500 rounded-full text-xs md:text-sm text-green-300">Express</span>
+                            <span class="px-2 md:px-3 py-1 bg-green-900 bg-opacity-30 border border-green-500 rounded-full text-xs md:text-sm text-green-300">API Gateway</span>
+                            <span class="px-2 md:px-3 py-1 bg-green-900 bg-opacity-30 border border-green-500 rounded-full text-xs md:text-sm text-green-300">Serverless</span>
+                        </div>
+                    </div>
+                    
+                    <!-- DevOps -->
+                    <div class="mb-6">
+                        <h5 class="font-bold text-orange-400 mb-2 text-sm">🚀 DevOps & Tools</h5>
+                        <div class="flex flex-wrap gap-1.5 md:gap-2 mb-3">
+                            <span class="px-2 md:px-3 py-1 bg-orange-900 bg-opacity-30 border border-orange-500 rounded-full text-xs md:text-sm text-orange-300">GitHub Actions</span>
+                            <span class="px-2 md:px-3 py-1 bg-orange-900 bg-opacity-30 border border-orange-500 rounded-full text-xs md:text-sm text-orange-300">Docker</span>
+                            <span class="px-2 md:px-3 py-1 bg-orange-900 bg-opacity-30 border border-orange-500 rounded-full text-xs md:text-sm text-orange-300">CI/CD</span>
+                            <span class="px-2 md:px-3 py-1 bg-orange-900 bg-opacity-30 border border-orange-500 rounded-full text-xs md:text-sm text-orange-300">Git</span>
+                            <span class="px-2 md:px-3 py-1 bg-orange-900 bg-opacity-30 border border-orange-500 rounded-full text-xs md:text-sm text-orange-300">Linux</span>
+                        </div>
                     </div>
                     
                     <h4 class="text-lg md:text-xl font-bold mb-3 gradient-text" data-translate="about.journey">Minha Jornada Profissional</h4>
@@ -330,9 +456,28 @@
                     </p>
                     
                     <div class="mb-4">
-                        <h5 class="font-bold">Desenvolvedor e Designer Autônomo</h5>
+                        <h5 class="font-bold">Desenvolvedor Cloud & Full Stack</h5>
                         <p class="text-gray-400 text-sm">Freelancer | 09/2023 - Presente</p>
-                        <p class="text-gray-300 mt-2">Criação de sites com HTML, CSS, JavaScript, PHP e MySQL. Suporte a clientes em sistemas em nuvem e servidores web. Design gráfico para redes sociais.</p>
+                        <p class="text-gray-300 mt-2">Desenvolvimento de soluções completas em nuvem AWS, aplicações web modernas com React/Next.js, sistemas serverless e automação de processos. Especialização em arquiteturas escaláveis e performance otimizada.</p>
+                        
+                        <div class="mt-3 grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
+                            <div class="bg-gray-700 rounded p-2 text-center">
+                                <div class="font-bold text-cyan-400">15+</div>
+                                <div class="text-gray-300">Projetos</div>
+                            </div>
+                            <div class="bg-gray-700 rounded p-2 text-center">
+                                <div class="font-bold text-green-400">99.9%</div>
+                                <div class="text-gray-300">Uptime</div>
+                            </div>
+                            <div class="bg-gray-700 rounded p-2 text-center">
+                                <div class="font-bold text-purple-400">2000+</div>
+                                <div class="text-gray-300">Usuários</div>
+                            </div>
+                            <div class="bg-gray-700 rounded p-2 text-center">
+                                <div class="font-bold text-orange-400">85%</div>
+                                <div class="text-gray-300">Performance</div>
+                            </div>
+                        </div>
                     </div>
                     
 
@@ -340,6 +485,53 @@
             </div>
         </section>
         
+        <!-- Technologies Section -->
+        <section class="py-8 md:py-16">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center gradient-text px-4 md:px-0">TECNOLOGIAS & FERRAMENTAS</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 px-4 md:px-0">
+                <!-- Cloud & AWS -->
+                <div class="bg-gray-800 rounded-2xl p-6 neon-border text-center tech-card stagger-animation gpu-accelerated">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center">
+                        <i class="fab fa-aws text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-orange-400">AWS Cloud</h3>
+                    <p class="text-gray-300 text-sm mb-4">Lambda, S3, DynamoDB, CloudFront, API Gateway</p>
+                    <div class="text-xs text-gray-400">Certificado CCP • DVA em progresso</div>
+                </div>
+                
+                <!-- Frontend -->
+                <div class="bg-gray-800 rounded-2xl p-6 neon-border text-center tech-card stagger-animation gpu-accelerated">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center">
+                        <i class="fab fa-react text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-400">Frontend</h3>
+                    <p class="text-gray-300 text-sm mb-4">React, Next.js, TypeScript, TailwindCSS</p>
+                    <div class="text-xs text-gray-400">Interfaces modernas e responsivas</div>
+                </div>
+                
+                <!-- Backend -->
+                <div class="bg-gray-800 rounded-2xl p-6 neon-border text-center tech-card stagger-animation gpu-accelerated">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center">
+                        <i class="fab fa-node-js text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-green-400">Backend</h3>
+                    <p class="text-gray-300 text-sm mb-4">Node.js, Python, Express, Serverless</p>
+                    <div class="text-xs text-gray-400">APIs escaláveis e performáticas</div>
+                </div>
+                
+                <!-- DevOps -->
+                <div class="bg-gray-800 rounded-2xl p-6 neon-border text-center tech-card stagger-animation gpu-accelerated">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple-400 to-pink-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-cogs text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-purple-400">DevOps</h3>
+                    <p class="text-gray-300 text-sm mb-4">CI/CD, Docker, GitHub Actions, Git</p>
+                    <div class="text-xs text-gray-400">Automação e deploy contínuo</div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="py-8 md:py-16">
             <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 md:mb-12 text-center gradient-text" data-translate="contact.title">CONTATO</h2>
@@ -447,8 +639,8 @@
     <script src="./js/main.js"></script>
     <script src="./js/components/contact.js"></script>
     <script src="./js/components/mobile-menu.js"></script>
-
-
+    <script src="./js/components/enhanced-interactions.js"></script>
     <script src="./data/projects.js"></script>
+    <script src="./js/enhanced-interactions.js"></script>
 </body>
 </html>
