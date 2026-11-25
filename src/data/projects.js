@@ -92,26 +92,35 @@ const projectsData = {
         ],
         link: './public/portfolio/Base Imoveis/index.html'
     },
-    'devaria': {
-        name: 'Devaria - Rede Social',
+    'ssphere': {
+        name: 'SSphere - Rede Social',
         category: 'Full Stack Development',
         client: 'Projeto Pessoal',
-        date: 'Abril 2024',
-        technologies: ['React', 'Node.js', 'MongoDB', 'AWS'],
-        description: 'Plataforma de rede social para desenvolvedores compartilharem projetos, conhecimentos e se conectarem com outros profissionais da área.',
+        date: 'Fevereiro 2026',
+        technologies: ['React', 'Next.js', 'Node.js', 'MongoDB', 'AWS S3', 'Vercel'],
+        description: 'Rede social moderna inspirada no Instagram com sistema completo de autenticação, feed de publicações, likes, comentários e sistema de seguir usuários. Deploy em produção com domínio customizado.',
         features: [
-            'Autenticação de usuários',
-            'Feed de postagens personalizado',
-            'Sistema de mensagens diretas',
-            'Compartilhamento de projetos com GitHub',
-            'Fórum de discussão por categorias'
+            'Autenticação JWT com cookies seguros',
+            'Feed de publicações com imagens hospedadas em AWS S3',
+            'Sistema de likes e comentários em tempo real',
+            'Seguir/deixar de seguir usuários',
+            'Pesquisa de usuários com filtros',
+            'Upload de imagens com compressão automática',
+            'Design responsivo com tema claro/escuro',
+            'Deploy automatizado com CI/CD'
         ],
         images: [
             'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80',
             'https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80',
             'https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
         ],
-        link: './public/portfolio/Devaria/index.html'
+        link: 'https://ssphere.sstechnologies-cloud.com',
+        metrics: {
+            uptime: '99.9%',
+            users: '3+',
+            posts: '8+',
+            status: 'Online'
+        }
     },
     'aws-services': {
         name: 'AWS S3 Explorer',

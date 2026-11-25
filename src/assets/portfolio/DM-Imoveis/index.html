@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Crediário - DM Móveis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>🏢 DM MÓVEIS</h1>
+                <p>Sistema de Crediário</p>
+            </div>
+            <div class="user-info">
+                <span>👤 Administrador</span>
+            </div>
+        </header>
+
+        <!-- Cards de Resumo -->
+        <div class="cards-container">
+            <div class="card card-blue">
+                <div class="card-icon">👥</div>
+                <div class="card-content">
+                    <h3>Clientes Ativos</h3>
+                    <p class="card-number">24</p>
+                </div>
+            </div>
+            <div class="card card-green">
+                <div class="card-icon">💰</div>
+                <div class="card-content">
+                    <h3>Total a Receber</h3>
+                    <p class="card-number">R$ 17.100,00</p>
+                </div>
+            </div>
+            <div class="card card-orange">
+                <div class="card-icon">📅</div>
+                <div class="card-content">
+                    <h3>Parcelas Hoje</h3>
+                    <p class="card-number">8</p>
+                </div>
+            </div>
+            <div class="card card-red">
+                <div class="card-icon">⚠️</div>
+                <div class="card-content">
+                    <h3>Em Atraso</h3>
+                    <p class="card-number">3</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra de Busca e Ações -->
+        <div class="toolbar">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Buscar cliente, produto ou valor...">
+            </div>
+            <button class="btn btn-help" onclick="mostrarAjuda()">❓ Como Usar</button>
+            <button class="btn btn-primary">➕ Novo Cliente</button>
+        </div>
+
+        <!-- Tabela de Clientes -->
+        <div class="table-container">
+            <table id="clientesTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Nome <span class="sort-icon">⇅</span></th>
+                        <th onclick="sortTable(1)">Produto <span class="sort-icon">⇅</span></th>
+                        <th onclick="sortTable(2)">Valor Total <span class="sort-icon">⇅</span></th>
+                        <th onclick="sortTable(3)">Parcelas <span class="sort-icon">⇅</span></th>
+                        <th onclick="sortTable(4)">Próximo Venc. <span class="sort-icon">⇅</span></th>
+                        <th onclick="sortTable(5)">Status <span class="sort-icon">⇅</span></th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Dados serão inseridos via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>💡 <strong>PRÉVIA INTERATIVA</strong> - Sistema completo terá cadastro, edição, relatórios e muito mais!</p>
+        </footer>
+    </div>
+
+    <!-- Modal de Ajuda -->
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharAjuda()">&times;</span>
+            <h2>📚 Como Usar e Testar a Prévia</h2>
+            
+            <div class="help-section">
+                <h3>🔍 1. BUSCA INTELIGENTE</h3>
+                <p>Digite na barra de busca para filtrar clientes:</p>
+                <ul>
+                    <li><strong>Por nome:</strong> "João" ou "Joao" (funciona com ou sem acento!)</li>
+                    <li><strong>Por produto:</strong> "Sofá" ou "Sofa"</li>
+                    <li><strong>Por valor:</strong> "2400" ou "1200"</li>
+                </ul>
+                <p class="tip">💡 <strong>Dica:</strong> A busca funciona mesmo se você esquecer os acentos!</p>
+            </div>
+
+            <div class="help-section">
+                <h3>📈 2. ORDENAÇÃO</h3>
+                <p>Clique no cabeçalho de qualquer coluna para ordenar:</p>
+                <ul>
+                    <li><strong>Nome:</strong> Ordem alfabética (A-Z ou Z-A)</li>
+                    <li><strong>Valor:</strong> Do menor para o maior (ou inverso)</li>
+                    <li><strong>Status:</strong> Agrupa por situação</li>
+                </ul>
+                <p class="tip">💡 <strong>Dica:</strong> Clique novamente para inverter a ordem!</p>
+            </div>
+
+            <div class="help-section">
+                <h3>📊 3. CARDS DE RESUMO</h3>
+                <p>No topo você vê:</p>
+                <ul>
+                    <li><strong>Clientes Ativos:</strong> Total de clientes com crediário</li>
+                    <li><strong>Total a Receber:</strong> Soma de todas as parcelas pendentes</li>
+                    <li><strong>Parcelas Hoje:</strong> Quantas vencem hoje</li>
+                    <li><strong>Em Atraso:</strong> Clientes com pagamento atrasado</li>
+                </ul>
+            </div>
+
+            <div class="help-section">
+                <h3>✅ 4. STATUS DOS CLIENTES</h3>
+                <ul>
+                    <li><span class="status status-em-dia">Em Dia</span> - Pagamentos em dia</li>
+                    <li><span class="status status-vence-hoje">Vence Hoje</span> - Parcela vence hoje</li>
+                    <li><span class="status status-atrasado">Atrasado</span> - Pagamento em atraso</li>
+                </ul>
+            </div>
+
+            <div class="help-section">
+                <h3>🚀 5. SISTEMA COMPLETO</h3>
+                <p>Esta é apenas uma <strong>PRÉVIA</strong>. O sistema final terá:</p>
+                <ul>
+                    <li>✅ Cadastro de novos clientes</li>
+                    <li>✅ Edição de informações</li>
+                    <li>✅ Registro de pagamentos</li>
+                    <li>✅ Relatórios completos</li>
+                    <li>✅ Impressão de carnês</li>
+                    <li>✅ Alertas de vencimento</li>
+                    <li>✅ E muito mais!</li>
+                </ul>
+            </div>
+
+            <button class="btn btn-primary" onclick="fecharAjuda()">Fechar Instrução</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -92,26 +92,35 @@ const projectsData = {
         ],
         link: './public/portfolio/Base Imoveis/index.html'
     },
-    'devaria': {
-        name: 'Devaria - Rede Social',
+    'ssphere': {
+        name: 'SSphere - Rede Social',
         category: 'Full Stack Development',
         client: 'Projeto Pessoal',
-        date: 'Abril 2024',
-        technologies: ['React', 'Node.js', 'MongoDB', 'AWS'],
-        description: 'Plataforma de rede social para desenvolvedores compartilharem projetos, conhecimentos e se conectarem com outros profissionais da área.',
+        date: 'Fevereiro 2026',
+        technologies: ['React', 'Next.js', 'Node.js', 'MongoDB', 'AWS S3', 'Vercel'],
+        description: 'Rede social moderna inspirada no Instagram com sistema completo de autenticação, feed de publicações, likes, comentários e sistema de seguir usuários. Deploy em produção com domínio customizado.',
         features: [
-            'Autenticação de usuários',
-            'Feed de postagens personalizado',
-            'Sistema de mensagens diretas',
-            'Compartilhamento de projetos com GitHub',
-            'Fórum de discussão por categorias'
+            'Autenticação JWT com cookies seguros',
+            'Feed de publicações com imagens hospedadas em AWS S3',
+            'Sistema de likes e comentários em tempo real',
+            'Seguir/deixar de seguir usuários',
+            'Pesquisa de usuários com filtros',
+            'Upload de imagens com compressão automática',
+            'Design responsivo com tema claro/escuro',
+            'Deploy automatizado com CI/CD'
         ],
         images: [
             'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80',
             'https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80',
             'https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
         ],
-        link: './public/portfolio/Devaria/index.html'
+        link: 'https://ssphere.sstechnologies-cloud.com',
+        metrics: {
+            uptime: '99.9%',
+            users: '3+',
+            posts: '8+',
+            status: 'Online'
+        }
     },
     'aws-services': {
         name: 'AWS Services',
@@ -181,6 +190,151 @@ const projectsData = {
         ],
         link: 'https://sstrafegopago.sstechnologies-cloud.com/'
     },
+    'aws-certification-platform': {
+        name: 'AWS Certification Platform',
+        category: 'Educação Tech',
+        client: 'Comunidade AWS',
+        date: 'Novembro 2024',
+        technologies: ['HTML5', 'CSS3', 'JavaScript ES6+', 'GitHub Pages', 'PWA'],
+        description: 'Plataforma completa de estudos para certificações AWS com 600 questões, simulados oficiais e sistema de aprendizado personalizado. Interface moderna com acessibilidade WCAG 2.1 AA.',
+        features: [
+            'Sistema de avaliação inicial para personalização de estudos',
+            '600 questões distribuídas em 3 certificações (CLF-C02, DVA-C02, SAA-C03)',
+            'Simulados com distribuição oficial AWS e timer inteligente',
+            'Meta de 80% acima do score oficial para máxima confiança',
+            'Interface responsiva com cards visuais interativos',
+            'Acessibilidade completa WCAG 2.1 AA',
+            'CI/CD automatizado com GitHub Actions'
+        ],
+        images: [
+            'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+        ],
+        link: 'https://sergio-sena.github.io/AWS-Certification-Platform/',
+        metrics: {
+            users: '500+',
+            questions: '600',
+            certifications: '3',
+            accuracy: '95%'
+        }
+    },
+    'midiaflow': {
+        name: 'Mídiaflow - Hospedagem de Vídeos',
+        category: 'SaaS Platform',
+        client: 'Startup Própria',
+        date: 'Janeiro 2025',
+        technologies: ['Next.js', 'Node.js', 'AWS Lambda', 'S3', 'CloudFront', 'MediaConvert'],
+        description: 'Plataforma SaaS completa para hospedagem e streaming de vídeos profissionais. Alternativa ao Vimeo/Wistia com 50-80% menos custo e funcionalidades avançadas.',
+        features: [
+            'Upload de vídeos até 5GB com conversão automática 4K',
+            'CDN global com 400+ pontos de distribuição',
+            'Player profissional responsivo e customizável',
+            'Analytics em tempo real com métricas detalhadas',
+            'API completa para integração com outras plataformas',
+            'Sistema de usuários multi-tenant com isolamento de dados',
+            'Arquitetura serverless escalável automaticamente'
+        ],
+        images: [
+            'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80',
+            'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1426&q=80'
+        ],
+        link: 'https://midiaflow.sstechnologies-cloud.com',
+        metrics: {
+            uptime: '99.9%',
+            users: '1000+',
+            videos: '10k+',
+            savings: '50-80%'
+        }
+    },
+    'traderbot': {
+        name: 'Trading Bot - Microserviços AWS',
+        category: 'FinTech',
+        client: 'Projeto Pessoal',
+        date: 'Setembro 2024',
+        technologies: ['Python', 'AWS Lambda', 'DynamoDB', 'EventBridge', 'TimeStream'],
+        description: 'Sistema de trading automatizado com arquitetura de microserviços na AWS. Foco em baixa latência, gerenciamento rigoroso de risco e alta disponibilidade.',
+        features: [
+            'Arquitetura serverless com microserviços independentes',
+            'Ingestão de dados de mercado em tempo real via WebSocket',
+            'Engine de estratégias pluggável com design patterns',
+            'Risk Manager crítico com controle de 3-5% de exposição',
+            'Execução de ordens com retry logic e slippage control',
+            'Monitoramento completo com CloudWatch e X-Ray',
+            'Latência < 100ms da ordem até execução'
+        ],
+        images: [
+            'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1642790106117-e829e14a795f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+        ],
+        link: '#',
+        metrics: {
+            latency: '<100ms',
+            uptime: '99.9%',
+            risk: '3-5%',
+            fillRate: '>95%'
+        }
+    },
+    'kate-portfolio': {
+        name: 'Kate Kuray Portfolio',
+        category: 'Portfolio Profissional',
+        client: 'Kate Kuray',
+        date: 'Setembro 2024',
+        technologies: ['HTML5', 'TailwindCSS', 'JavaScript', 'WebP', 'AWS S3', 'CloudFront'],
+        description: 'Portfolio otimizado para modelo de cosplay com foco extremo em performance. Implementação de WebP, lazy loading e otimizações que resultaram em 85% de melhoria na velocidade.',
+        features: [
+            'Otimização de performance com 85% de melhoria na velocidade',
+            'Implementação de WebP com fallback para JPEG',
+            'Lazy loading com Intersection Observer API',
+            'CSS inline crítico para redução de requests',
+            'Galeria interativa com modal de vídeos',
+            'Design responsivo mobile-first',
+            'Hospedagem AWS com CDN global'
+        ],
+        images: [
+            'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80',
+            'https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80'
+        ],
+        link: 'https://kate-kuray-profile.sstechnologies-cloud.com',
+        metrics: {
+            performance: '85%',
+            loadTime: '0.6s',
+            requests: '-47%',
+            mobileScore: '95'
+        }
+    },
+    'simulado-dva': {
+        name: 'Simulado DVA-C02',
+        category: 'Educação Tech',
+        client: 'Comunidade AWS',
+        date: 'Agosto 2024',
+        technologies: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage', 'PWA'],
+        description: 'Simulador especializado para certificação AWS Developer Associate com questões reais, timer oficial e sistema de resultados detalhado.',
+        features: [
+            'Banco de questões específicas para DVA-C02',
+            'Timer oficial de 130 minutos',
+            'Sistema de resultados com análise por domínio',
+            'Histórico de tentativas com localStorage',
+            'Interface responsiva e acessível',
+            'Modo offline com PWA',
+            'Explicações detalhadas para cada questão'
+        ],
+        images: [
+            'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+            'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
+        ],
+        link: './public/portfolio/Simulado DVA/index.html',
+        metrics: {
+            questions: '200+',
+            accuracy: '90%',
+            users: '300+',
+            passRate: '85%'
+        }
+    }
 
 };
 
